@@ -1,5 +1,11 @@
 # @erwininteractive/faker
 
+## 0.0.5
+
+### Patch Changes
+
+- c032ac7: update README with example code
+
 ## 0.0.4
 
 ### Patch Changes
