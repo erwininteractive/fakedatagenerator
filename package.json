@@ -8,7 +8,7 @@
     "description": "Generate fake data for development",
     "publishConfig": {
         "access": "public",
-        "registry": "https://registry.npmjs.org/@erwininteractive"
+        "registry": "https://registry.npmjs.org"
     },
     "main": "dist/index.js",
     "module": "dist/index.mjs",
@@ -21,8 +21,8 @@
         "test": "vitest run",
         "build": "tsup src/index.ts --format cjs,esm --dts",
         "lint": "tsc",
-        "ci": "npm run lint && npm run test && npm run build",
-        "release": "npm run lint && npm run test && npm run build && changeset publish"
+        "ci": "pnpm run lint && pnpm run test && pnpm run build",
+        "release": "pnpm run lint && pnpm run test && pnpm run build && changeset publish"
     },
     "keywords": [
         "typescript",
