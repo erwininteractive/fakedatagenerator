@@ -1,5 +1,11 @@
 # @erwininteractive/faker
 
+## 0.0.4
+
+### Patch Changes
+
+- 1a44916: update README
+
 ## 0.0.3
 
 ### Patch Changes
