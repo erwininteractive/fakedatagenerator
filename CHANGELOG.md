@@ -1,5 +1,11 @@
 # @erwininteractive/faker
 
+## 0.0.6
+
+### Patch Changes
+
+- 8330b5a: add license
+
 ## 0.0.5
 
 ### Patch Changes
