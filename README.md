@@ -1,4 +1,4 @@
-```npm install @faker-js/faker --save-dev```
+```npm install @erwininteractive/faker --save-dev```
 
 Import ```Factory```
 
