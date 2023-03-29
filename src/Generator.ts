@@ -23,12 +23,21 @@ export default class Generator
     }
 
     public Name(gender?: Gender, title?: boolean, suffix?: boolean): string {
-        let g: formatter = null
+        gender = gender || Gender.Male
 
-        if (typeof gender !== 'undefined') {
-            g = gender == Gender.Male ? 'firstNameMale' : 'firstNameFemale'
+        let name: String = new String
+
+        if (title) {
+            name = name.concat(gender == Gender.Male ? this.generateText('titleMale') : this.generateText('titleFemale') + ' ')
         }
 
-        return this.generateText(g)
+        name = name.concat(gender == Gender.Male ? this.generateText('firstNameMale') : this.generateText('firstNameFemale'))
+        name = name.concat(' ' + this.generateText('lastName'))
+
+        if (suffix) {
+            name = name.concat(', ' + this.generateText('suffix'))
+        }
+
+        return name.toString()
     }
 }
