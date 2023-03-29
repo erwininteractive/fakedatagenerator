@@ -1,5 +1,11 @@
 # @erwininteractive/faker
 
+## 0.0.7
+
+### Patch Changes
+
+- 5c5f792: add full name function
+
 ## 0.0.6
 
 ### Patch Changes
