@@ -7,3 +7,10 @@ export function randomElement<T>(element: T): T[keyof T] {
 
     return values[index]
 }
+
+export function getRandomEnum(e) {
+    const values = Object.keys(e);
+    const key = values[Math.floor(Math.random() * values.length)]
+
+    return e[key]
+}
