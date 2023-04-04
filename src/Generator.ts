@@ -1,5 +1,6 @@
 import validFormatters from './data/formatters.json'
 import { Gender } from './enums'
+import { randomElement } from './functions'
 
 type formatter = keyof typeof validFormatters
 
@@ -23,12 +24,14 @@ export default class Generator
     }
 
     public Name(gender?: Gender, title?: boolean, suffix?: boolean): string {
-        gender = gender || Gender.Male
+        gender = gender || randomElement(Gender)
 
         let name: String = new String
+        name = name.concat(gender + ' | ')
 
         if (title) {
-            name = name.concat(gender == Gender.Male ? this.generateText('titleMale') : this.generateText('titleFemale') + ' ')
+            name = name.concat(gender == Gender.Male ? this.generateText('titleMale') : this.generateText('titleFemale'))
+            name = name.concat(' ')
         }
 
         name = name.concat(gender == Gender.Male ? this.generateText('firstNameMale') : this.generateText('firstNameFemale'))
