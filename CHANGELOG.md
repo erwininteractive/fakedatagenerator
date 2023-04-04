@@ -1,5 +1,11 @@
 # @erwininteractive/faker
 
+## 0.0.8
+
+### Patch Changes
+
+- 85bc6f2: update package name
+
 ## 0.0.7
 
 ### Patch Changes
