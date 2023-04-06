@@ -1,5 +1,11 @@
 # @erwininteractive/faker
 
+## 0.0.9
+
+### Patch Changes
+
+- dcfcc8d: update person methods - remove format method
+
 ## 0.0.8
 
 ### Patch Changes

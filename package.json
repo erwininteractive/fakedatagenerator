@@ -2,11 +2,11 @@
     "name": "@erwininteractive/faker",
     "author": "Andrew S Erwin",
     "license": "MIT",
-     "repository": {
+    "repository": {
         "type": "git",
         "url": "https://github.com/erwininteractive/fakedatagenerator.git"
     },
-    "version": "0.0.8",
+    "version": "0.0.9",
     "description": "Generate fake data for development",
     "publishConfig": {
         "access": "public",
@@ -15,7 +15,9 @@
     "main": "dist/main.js",
     "module": "dist/main.mjs",
     "types": "dist/main.d.ts",
-    "files": ["dist"],
+    "files": [
+        "dist"
+    ],
     "scripts": {
         "dev": "vitest",
         "test": "vitest run",
@@ -24,8 +26,12 @@
         "ci": "pnpm run lint && pnpm run test && pnpm run build",
         "release": "pnpm run lint && pnpm run test && pnpm run build && changeset publish"
     },
-    "keywords": ["typescript","faker","fake data"],
-   "devDependencies": {
+    "keywords": [
+        "typescript",
+        "faker",
+        "fake data"
+    ],
+    "devDependencies": {
         "@changesets/cli": "^2.26.0",
         "@types/node": "^18.15.5",
         "tsup": "^6.7.0",
