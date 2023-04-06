@@ -2,10 +2,21 @@
 
 Import ```Factory```
 
-Run the static method ```format```
+### STATIC METHODS FOR NAMES 
+#### ALL PARAMETERS ARE OPTIONAL
+
+.FirstName(gender: string)
+
+.LastName()
+
+.Title(gender: string)
+
+.Suffix(gender: string)
+
+.FullName(gender: string, title: bool, suffix: bool)
+
 
 ## EXAMPLE CODE 
-
 
 ```
 
@@ -13,17 +24,14 @@ import { Factory } from "@erwininteractive/faker"
 
 let f = Factory.create()
 
-/* CREATE A SINGLE NAME */
-let firstName = f.format('firstNameMale')
-let lastName = f.format('lastName')
+/* CREATE A SINGLE NAME - RANDOM GENDER */
+console.log(f.FirstName())
 
-console.log(`${firstName} ${lastName}`)
-
-/* CREATE AN ARRAY OF NAMES */
+/* CREATE AN ARRAY OF FULL NAMES WITH TITLE AND SUFFIX - RANDOM GENDER */
 let names = []
 
 for (let x = 0; x < 9; ++x) {
-    names.push(`${f.format('firstNameMale')} ${f.format('lastName')}`)
+    names.push(f.FullName(null, true, true))
 }
 
 console.log(names)
