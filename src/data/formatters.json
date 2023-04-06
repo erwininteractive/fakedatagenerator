@@ -79,7 +79,8 @@
         "Yost", "Yundt",
         "Zboncak", "Zemlak", "Ziemann", "Zieme", "Zulauf"
     ],
-    "suffix": ["Jr.", "Sr.", "MD", "DDS", "PhD", "DVM"],
+    "suffixMale": ["Jr.", "Sr.", "MD", "DDS", "PhD", "DVM"],
+    "suffixFemale": ["MD", "DDS", "PhD", "DVM"],
     "titleMale": ["Mr.", "Dr.", "Prof."],
     "titleFemale": ["Mrs.", "Ms.", "Miss", "Dr.", "Prof."]
 }

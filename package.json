@@ -1,6 +1,8 @@
 {
     "name": "@erwininteractive/faker",
-    "repository": {
+    "author": "Andrew S Erwin",
+    "license": "MIT",
+     "repository": {
         "type": "git",
         "url": "https://github.com/erwininteractive/fakedatagenerator.git"
     },
@@ -10,28 +12,20 @@
         "access": "public",
         "registry": "https://registry.npmjs.org"
     },
-    "main": "dist/index.js",
-    "module": "dist/index.mjs",
-    "types": "dist/index.d.ts",
-    "files": [
-        "dist"
-    ],
+    "main": "dist/main.js",
+    "module": "dist/main.mjs",
+    "types": "dist/main.d.ts",
+    "files": ["dist"],
     "scripts": {
         "dev": "vitest",
         "test": "vitest run",
-        "build": "tsup src/index.ts --format cjs,esm --dts",
+        "build": "tsup src/main.ts --format cjs,esm --dts",
         "lint": "tsc",
         "ci": "pnpm run lint && pnpm run test && pnpm run build",
         "release": "pnpm run lint && pnpm run test && pnpm run build && changeset publish"
     },
-    "keywords": [
-        "typescript",
-        "faker",
-        "fake data"
-    ],
-    "author": "Andrew S Erwin",
-    "license": "MIT",
-    "devDependencies": {
+    "keywords": ["typescript","faker","fake data"],
+   "devDependencies": {
         "@changesets/cli": "^2.26.0",
         "@types/node": "^18.15.5",
         "tsup": "^6.7.0",
