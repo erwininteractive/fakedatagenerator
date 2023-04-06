@@ -1,5 +1,12 @@
 # @erwininteractive/faker
 
+## 0.0.10
+
+### Patch Changes
+
+- 274dc29: update README file
+- da6b7ab: fix test with updated methods
+
 ## 0.0.9
 
 ### Patch Changes
