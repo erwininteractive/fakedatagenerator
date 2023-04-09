@@ -3,6 +3,7 @@
 Import ```Factory```
 
 ### STATIC METHODS FOR NAMES 
+
 #### ALL PARAMETERS ARE OPTIONAL
 
 .FirstName(gender: string)
