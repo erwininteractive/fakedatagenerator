@@ -1,3 +1,5 @@
+FIRST MINOR VERSION
+
 ```npm install @erwininteractive/faker --save-dev```
 
 Import ```Factory```
