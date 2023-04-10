@@ -1,5 +1,11 @@
 # @erwininteractive/faker
 
+## 0.2.0
+
+### Minor Changes
+
+- e3728a9: First minor version
+
 ## 0.0.10
 
 ### Patch Changes
